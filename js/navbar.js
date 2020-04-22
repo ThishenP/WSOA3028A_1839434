@@ -9,23 +9,23 @@ a0.setAttribute("HREF", "index.html");
 a0.appendChild(document.createTextNode("HOME"))
 
 let a1 = document.createElement("a")
-a1.setAttribute("HREF", "Blog.HTML");
+a1.setAttribute("HREF", "Blog.html");
 a1.appendChild(document.createTextNode("BLOG"))
 
 let a2 = document.createElement("a")
-a2.setAttribute("HREF", "About.HTML");
+a2.setAttribute("HREF", "About.html");
 a2.appendChild(document.createTextNode("ABOUT"))
 
 let a3 = document.createElement("a")
-a3.setAttribute("HREF", "Media.HTML");
+a3.setAttribute("HREF", "Media.html");
 a3.appendChild(document.createTextNode("MEDIA"))
 
 let a4 = document.createElement("a")
-a4.setAttribute("HREF", "Contact.HTML");
+a4.setAttribute("HREF", "Contact.html");
 a4.appendChild(document.createTextNode("CONTACT"))
 
 let a5 = document.createElement("a")
-a5.setAttribute("HREF", "Wireframe.HTML");
+a5.setAttribute("HREF", "Wireframe.html");
 a5.appendChild(document.createTextNode("WIREFRAME"))
 
 let li = document.createElement("li")
