@@ -1,4 +1,5 @@
-//NAVIGATION TO BE ADDED TO EACH PAGE
+//TO BE ADDED TO EACH PAGE
+//Creates a navbar and handles back functionality
 //Done in this way to avoid using innerHTML
 
 
@@ -29,6 +30,10 @@ let a5 = document.createElement("a")
 a5.setAttribute("HREF", "../Pages/Wireframe.html");
 a5.appendChild(document.createTextNode("WIREFRAME"))
 
+let a6 = document.createElement("button")
+a6.setAttribute("id", "back");
+a6.appendChild(document.createTextNode("BACK"))
+
 let li = document.createElement("li")
 li.appendChild(a0)
 ul.appendChild(li)
@@ -53,6 +58,10 @@ let li5 = document.createElement("li")
 li5.appendChild(a5)
 ul.appendChild(li5)
 
+let li6 = document.createElement("li")
+li6.appendChild(a6)
+ul.appendChild(li6)
+
 nav.appendChild(ul)
 let h = document.createElement("h1")
 h.appendChild(document.createTextNode("AVERY SOSA"))
@@ -62,3 +71,9 @@ p.appendChild(document.createTextNode("Skateboarding + Photography"))
 document.getElementById("navbar").appendChild(h)
 document.getElementById("navbar").appendChild(p)
 document.getElementById("navbar").appendChild(nav)
+
+
+document.getElementById("back").addEventListener("click", function(){
+    window.history.back();
+   });
+ 
