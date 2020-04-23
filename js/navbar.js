@@ -1,31 +1,32 @@
 //NAVIGATION TO BE ADDED TO EACH PAGE
+//Done in this way to avoid using innerHTML
 
 
 let nav = document.createElement("nav")
 let ul = document.createElement("ul")
 
 let a0 = document.createElement("a")
-a0.setAttribute("HREF", "index.html");
+a0.setAttribute("HREF", "../Pages/index.html");
 a0.appendChild(document.createTextNode("HOME"))
 
 let a1 = document.createElement("a")
-a1.setAttribute("HREF", "Blog.html");
+a1.setAttribute("HREF", "../Pages/Blog.html");
 a1.appendChild(document.createTextNode("BLOG"))
 
 let a2 = document.createElement("a")
-a2.setAttribute("HREF", "About.html");
+a2.setAttribute("HREF", "../Pages/About.html");
 a2.appendChild(document.createTextNode("ABOUT"))
 
 let a3 = document.createElement("a")
-a3.setAttribute("HREF", "Media.html");
+a3.setAttribute("HREF", "../Pages/Media.html");
 a3.appendChild(document.createTextNode("MEDIA"))
 
 let a4 = document.createElement("a")
-a4.setAttribute("HREF", "Contact.html");
+a4.setAttribute("HREF", "../Pages/Contact.html");
 a4.appendChild(document.createTextNode("CONTACT"))
 
 let a5 = document.createElement("a")
-a5.setAttribute("HREF", "Wireframe.html");
+a5.setAttribute("HREF", "../Pages/Wireframe.html");
 a5.appendChild(document.createTextNode("WIREFRAME"))
 
 let li = document.createElement("li")
@@ -52,6 +53,12 @@ let li5 = document.createElement("li")
 li5.appendChild(a5)
 ul.appendChild(li5)
 
-
 nav.appendChild(ul)
-document.getElementById("navigation").appendChild(nav)
+let h = document.createElement("h1")
+h.appendChild(document.createTextNode("AVERY SOSA"))
+let p = document.createElement("p")
+p.appendChild(document.createTextNode("Skateboarding + Photography"))
+
+document.getElementById("navbar").appendChild(h)
+document.getElementById("navbar").appendChild(p)
+document.getElementById("navbar").appendChild(nav)
