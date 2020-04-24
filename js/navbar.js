@@ -1,6 +1,6 @@
 //TO BE ADDED TO EACH PAGE
 //Creates a navbar and handles back functionality
-//Done in this way to avoid using innerHTML
+//Done in this way to avoid using innerHTML since it poses a security risk
 
 
 let nav = document.createElement("nav")
