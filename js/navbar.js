@@ -30,6 +30,10 @@ let a5 = document.createElement("a")
 a5.setAttribute("HREF", "../Pages/Wireframe.html");
 a5.appendChild(document.createTextNode("WIREFRAME"))
 
+let a7 = document.createElement("a")
+a7.setAttribute("HREF", "../Pages/Character.html");
+a7.appendChild(document.createTextNode("CHARACTER"))
+
 let a6 = document.createElement("button")
 a6.setAttribute("id", "back");
 a6.appendChild(document.createTextNode("BACK"))
@@ -57,6 +61,10 @@ ul.appendChild(li4)
 let li5 = document.createElement("li")
 li5.appendChild(a5)
 ul.appendChild(li5)
+
+let li7 = document.createElement("li")
+li7.appendChild(a7)
+ul.appendChild(li7)
 
 let li6 = document.createElement("li")
 li6.appendChild(a6)
