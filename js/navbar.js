@@ -28,7 +28,7 @@ a4.appendChild(document.createTextNode("CONTACT"))
 
 let a5 = document.createElement("a")
 a5.setAttribute("HREF", "../Pages/Wireframe.html");
-a5.appendChild(document.createTextNode("WIREFRAME"))
+a5.appendChild(document.createTextNode("WEBSITE STYLE"))
 
 let a7 = document.createElement("a")
 a7.setAttribute("HREF", "../Pages/Character.html");
