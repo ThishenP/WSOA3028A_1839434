@@ -1,6 +1,93 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; 
+  font-family: serif
+}
+
 .container{
   max-width: 980px;
   margin: 0 auto;
+  margin-top: 5vh;
   padding-left: 40px;
   padding-right: 40px; 
+}
+
+
+
+
+nav{
+  
+  display: flex;
+  align-items: center;
+  background-image: url("/Source/Images/devin-avery-7GWQJ0yYRhM-unsplash.jpg");
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: 100%;
+  background-position: center;
+  min-height: 30vh;
+  width: 100%;
+  justify-content: space-around;
+  transition: 0.8s;
+}
+.main header{
+  min-height: 30vh;
+  transition: 0.8s;
+ 
+}
+.main header.sticky{
+  min-height: 7vh;
+}
+
+.sticky nav{
+  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  background-color: black;
+  min-height: 7vh;
+
+  justify-content: space-around;
+  
+}
+
+
+nav h1 {
+  font-size: 200%;
+  font-weight: 400;
+  letter-spacing: 2vh;
+  transition: 0.8s;
+}
+
+.sticky nav h1 {
+  font-size: 150%;
+  letter-spacing: 0.2vh;
+}
+
+nav p{
+  display: inline;
+  font-weight: 600;
+  opacity: 1;
+  color: rgb(56, 69, 99);
+}
+
+
+nav ul{
+  display: inline-flex;
+  list-style-type: none;
+}
+
+
+nav li{
+  margin-right: 5%;
+}
+
+nav a{
+  text-decoration: none;
+  color: rgb(223, 223, 223);
+}
+
+nav a:hover{
+  color: rgb(99, 219, 183);
 }

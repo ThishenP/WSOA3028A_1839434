@@ -7,16 +7,37 @@ const menu = [
     {title: "ABOUT", link: "/About"},
     {title: "MEDIA", link: "/Media"},
     {title: "CONTACT", link: "/Contact"},
-    {title: "WEBSITE STYLE", link: "/Wireframe"},
+    {title: "UI", link: "/Wireframe"},
     {title: "CHARACTER", link: "/Character"},
    
 ]
 
+// function createBanner(){
+//     const header= document.querySelector("header")
+//     const banner = document.createElement("section")
+//     banner.classList.add("banner")
+//     header.appendChild(banner)
+// }
 function initialiseMenu(){
-    console.log("test")
-    const nav = document.querySelector("nav");
+    const header= document.querySelector("header")
+    header.classList.add("main")
+    const nav = document.createElement("nav");
     const ul =  document.createElement("ul");
- 
+
+
+    const nameDiv = document.createElement("div")
+    const h1 = document.createElement("h1");
+    const p =document.createElement("p");
+    const logoLink = document.createElement("a");
+
+    logoLink.innerText="AVERY SOSA"
+    logoLink.href="/"
+    h1.appendChild(logoLink)
+    p.innerText="Skating & Photography"
+    nameDiv.appendChild(h1)
+    nameDiv.appendChild(p)
+    nav.appendChild(nameDiv)
+    
     for(let element of menu){
         const li = document.createElement("li");
         const a = document.createElement("a");
@@ -26,9 +47,19 @@ function initialiseMenu(){
         ul.appendChild(li);   
     }
     nav.appendChild(ul);
+    header.appendChild(nav);
 };
 
+
+
 document.addEventListener('DOMContentLoaded',initialiseMenu());
+
+document.addEventListener("scroll", function(){
+
+    const header= document.querySelector("header");
+    header.classList.toggle("sticky",window.scrollY>0);
+   
+})
 
 
 // let nav = document.createElement("nav")
