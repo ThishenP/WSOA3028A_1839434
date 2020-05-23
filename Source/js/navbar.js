@@ -20,8 +20,8 @@ function initialiseMenu(){
     for(let element of menu){
         const li = document.createElement("li");
         const a = document.createElement("a");
-        a.innerText = element.link
-        li.innerText = element.title;
+        a.innerText = element.title
+        a.href = element.link;
         li.appendChild(a)
         ul.appendChild(li);   
     }
