@@ -2,13 +2,13 @@
 //Creates a navbar and handles back functionality
 
 const menu = [
-    {title: "HOME", link: "/"},
-    {title: "BLOG", link: "/Blog"},
-    {title: "ABOUT", link: "/About"},
-    {title: "MEDIA", link: "/Media"},
-    {title: "CONTACT", link: "/Contact"},
-    {title: "UI", link: "/Wireframe"},
-    {title: "CHARACTER", link: "/Character"},
+    {title: "HOME", link: "/WSOA3028A_1839434/"},
+    {title: "BLOG", link: "/WSOA3028A_1839434/Blog"},
+    {title: "ABOUT", link: "/WSOA3028A_1839434/About"},
+    {title: "MEDIA", link: "/WSOA3028A_1839434/Media"},
+    {title: "CONTACT", link: "/WSOA3028A_1839434/Contact"},
+    {title: "UI", link: "/WSOA3028A_1839434/Wireframe"},
+    {title: "CHARACTER", link: "/WSOA3028A_1839434/Character"},
    
 ]
 
@@ -49,7 +49,6 @@ function initialiseMenu(){
     nav.appendChild(ul);
     header.appendChild(nav);
 };
-
 
 
 document.addEventListener('DOMContentLoaded',initialiseMenu());
