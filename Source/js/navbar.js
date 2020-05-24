@@ -23,19 +23,28 @@ function initialiseMenu(){
     header.classList.add("main")
     const nav = document.createElement("nav");
     const ul =  document.createElement("ul");
-
+    
+    ul.id="links"
+    ul.classList.add("links")
 
     const nameDiv = document.createElement("div")
     const h1 = document.createElement("h1");
     const p =document.createElement("p");
+   
+    const show_nav=document.createElement("a");
+    show_nav.innerText="show navigation"
+    show_nav.id="dropdown"
+    show_nav.href="#"
     const logoLink = document.createElement("a");
 
     logoLink.innerText="AVERY SOSA"
-    logoLink.href="/"
+    logoLink.href="/WSOA3028A_1839434/"
     h1.appendChild(logoLink)
     p.innerText="Skating & Photography"
     nameDiv.appendChild(h1)
     nameDiv.appendChild(p)
+    nameDiv.appendChild(show_nav)
+    nameDiv.classList.add("NameSection")
     nav.appendChild(nameDiv)
     
     for(let element of menu){
@@ -52,6 +61,21 @@ function initialiseMenu(){
 
 
 document.addEventListener('DOMContentLoaded',initialiseMenu());
+
+document.getElementById("dropdown").addEventListener("click",function(){
+  
+
+  let list = document.getElementById("links")
+  if (list.className == "links") {
+
+  list.className += " showNav";
+
+  } else {
+    list.className = "links";
+  }
+})
+
+
 
 document.addEventListener("scroll", function(){
 

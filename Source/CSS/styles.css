@@ -2,25 +2,36 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0; 
-  font-family: serif
+  font-family: serif;
+  
+  
+}
+body{
+  background-color: rgb(26, 26, 26);
+  color: rgb(190, 190, 190);
 }
 
 .container{
+  
   max-width: 980px;
   margin: 0 auto;
-  margin-top: 5vh;
+  margin-top: 35vh;
   padding-left: 40px;
   padding-right: 40px; 
+  
 }
+
 
 
 
 
 nav{
-  
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   align-items: center;
-  background-image: url("/WSOA3028A_1839434/Source/Images/devin-avery-7GWQJ0yYRhM-unsplash.jpg");
+  background-image: url("/WSOA3028A_1839434/Source/Images/banner.jpg");
   background-color: rgba(0, 0, 0, 0.7);
   background-size: 100%;
   background-position: center;
@@ -39,25 +50,32 @@ nav{
 }
 
 .sticky nav{
-  
-  position: fixed;
-  top: 0;
-  width: 100%;
+
   display: inline-flex;
   align-items: center;
   background-color: black;
   min-height: 7vh;
-
   justify-content: space-around;
   
 }
 
+nav div{
+  
+}
+
+#dropdown{
+  display: none;
+  width: 50px;
+  height: 50px;
+}
 
 nav h1 {
+  display: inline-block;
   font-size: 200%;
   font-weight: 400;
   letter-spacing: 2vh;
   transition: 0.8s;
+  
 }
 
 .sticky nav h1 {
@@ -66,10 +84,10 @@ nav h1 {
 }
 
 nav p{
-  display: inline;
+  /* display: inline; */
   font-weight: 600;
   opacity: 1;
-  color: rgb(56, 69, 99);
+  color: rgb(74, 160, 134);
 }
 
 
@@ -90,4 +108,49 @@ nav a{
 
 nav a:hover{
   color: rgb(99, 219, 183);
+}
+
+@media screen and (max-width: 768px){
+
+  .container{
+    margin-top: 15vh;
+  }
+
+  #dropdown{
+    display:inline-flex;
+    background-image: url(../Images/dropdown.png);
+    background-position: center;
+    background-size: 100%;
+    text-indent: -9990px;
+  }
+  .NameSection {
+    text-align: center;
+  }
+
+
+  nav{
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh
+  }
+
+  nav p{
+    text-align: center;
+  }
+  nav ul{
+    display: none;
+  }
+  nav ul a{
+    font-size: 120%;
+  }
+  nav ul.showNav{
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li{
+    text-align: center;
+    /* margin: auto; */
+  }
+
 }
