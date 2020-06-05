@@ -8,7 +8,7 @@ const menu = [
     {title: "MEDIA", link: "/WSOA3028A_1839434/Media"},
     {title: "CONTACT", link: "/WSOA3028A_1839434/Contact"},
     {title: "UI", link: "/WSOA3028A_1839434/Wireframe"},
-    {title: "CHARACTER", link: "/WSOA3028A_1839434/Character"},
+    {title: "CHARACTER", link: "/WSOA3028A_1839434/Character"}
    
 ]
 

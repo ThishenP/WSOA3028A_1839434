@@ -1,3 +1,4 @@
+/*1080p desktop form factor (Desktop first design)*/
 *{
   box-sizing: border-box;
   padding: 0;
@@ -10,7 +11,9 @@ body{
 }
 a{
   text-decoration: none;
+  color: rgb(190, 190, 190);
 }
+
 /*Body*/
 .container{
   max-width: 1080px;
@@ -20,17 +23,32 @@ a{
   padding-right: 2vw; 
   padding-bottom: 15vh;
 }
+.page-name {
+text-align: center;
+margin-bottom: 5vh;
+font-size: 200%;
+color: rgb(105, 105, 105);
+}
 .grid article{
+  border-radius: 5%;
   background-color: #686658;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: space-between;
- 
   transition: 0.4s;
 }
 
+.container h3, h2, p{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.container figure{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 .grid header{
   padding: 3%;
 }
@@ -48,22 +66,62 @@ a{
   grid-gap: 2%;
   grid-auto-rows: minmax(20vh,auto);
 }
+
+.blog-selector{
+  margin: auto;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 7%;
+}
+.hide{
+  display: none;
+}
+.blog-selector button{
+  color: rgb(190, 190, 190);
+  background: none;
+  border-style: solid;
+  border-color: rgb(190, 190, 190);
+  min-width: 40%;
+  min-height: 200%;
+  font-size: 110%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.blog-selector .selected{
+  background: rgb(190, 190, 190);
+  border-style: solid;
+  border-color: rgb(74, 160, 134);
+  color: rgb(0, 0, 0);
+}
+
 /*Buttons*/
 button{
-  background-color: rgb(74, 160, 134);
+  
   border: none;
   padding: 0.5vh 0.75vw;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin: auto;
+  margin-bottom: 2%;
   transition: 0.2s;
+  border-radius: 10px;
+}
+article button{
+  margin-top: 5%;
+  margin-bottom: 10%;
+  background-color: rgb(74, 160, 134);
 }
 button a{
+
   font-size: 150%;
   text-decoration: none;
   color: rgb(0, 0, 0);
+
 }
 button:hover{
-  background-color: rgb(190, 190, 190);
+  background-color: rgb(187, 187, 187);
+  color: rgb(0, 0, 0);
 }
 
 /*images*/
@@ -99,7 +157,7 @@ button:hover{
 
 /*Header*/
 nav{
-  z-index: 2;
+  z-index: 99;
   position: fixed;
   top: 0;
   width: 100%;
@@ -125,16 +183,10 @@ nav{
 }
 
 .sticky nav{
-
   display: inline-flex;
-  align-items: center;
   background-color: black;
   min-height: 7vh;
-  justify-content: space-around;
-  
-}
-
-nav div{
+ 
   
 }
 
@@ -184,12 +236,60 @@ nav a:hover{
   color: rgb(99, 219, 183);
 }
 
-@media screen and (max-width: 768px){
-
-
+/*around tablet form factor */
+@media screen and (max-width: 992px){
+  .caption{
+    position: relative;
+    opacity: 1;
+  }
   .container{
-    margin-top: 15vh;
-    margin-bottom: 10vh;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+  }
+  nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 20vh
+  }
+  .sticky nav{
+    min-height: 20vh
+  }
+
+  nav h1{
+    font-size: 260%;
+  }
+
+  .sticky nav h1{
+    font-size: 260%;
+  }
+
+  nav ul{
+    width:100%;
+    justify-content: center;
+  }
+  nav p{
+    text-align: center;
+  }
+
+  nav li a{
+    font-size: 120%;
+  }
+
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/*mobile form factor*/
+@media screen and (max-width: 768px){
+  .caption{
+    position: relative;
+    opacity: 1;
+  }
+  .container{
+    margin-top: 20vh;
+    margin-bottom: 120vh;
   }
 
   .grid{
@@ -207,16 +307,12 @@ nav a:hover{
     text-align: center;
   }
 
-
   nav{
     display: flex;
     flex-direction: column;
     min-height: 10vh
   }
 
-  nav p{
-    text-align: center;
-  }
   nav ul{
     display: none;
   }
@@ -234,3 +330,4 @@ nav a:hover{
   }
 
 }
+
