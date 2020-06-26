@@ -10,7 +10,7 @@
     <meta name="author" content="Thishen Packirisamy 1839434">
     <link rel="stylesheet" href="../Source/CSS/styles.css">
     <script src="../Source/js/navbar.js" type="module" async></script>
-    <script src="../Source/js/blogSwitcher.js" type="module" async></script>
+    <script src="../Source/js/switcher.js" type="module" async></script>
 </head>
 
 <body>
@@ -19,12 +19,12 @@
     </header>
     <div class="container">
         <h2 class="page-name">Blog</h2>
-        <div class="blog-selector">
-            <button id="charBlogButton" class="selected">THEORY</button>
-            <button id="theoryBlogButton">CHARACTER</button>
+        <div class="selector">
+            <button id="selector1" class="selected">THEORY</button>
+            <button id="selector2">CHARACTER</button>
         </div>
 
-        <div id="theory-blog" class="grid">
+        <div id="selector1-content" class="grid">
 
             <article>
                 <a href="/WSOA3028A_1839434/Blog/Posts/Welfare-Surveillance-Violating-Human-Rights/" class="image-holder">
@@ -225,7 +225,7 @@
             </article>
         </div>
 
-        <div id="character-blog" class="grid hide">
+        <div id="selector2-content" class="grid hide">
             <article>
                 <a href="/WSOA3028A_1839434/Blog/Posts/I-miss-outside/" class="image-holder">
                     <img src="../Source/Images/Outside.jpg" alt="Street in Johannesburg" width="100%">

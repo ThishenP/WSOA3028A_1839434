@@ -9,9 +9,10 @@
     <meta name="keywords" content="Skateboarding,Photography,Photos,Videos">
     <meta name="author" content="Thishen Packirisamy 1839434">
     <link rel="stylesheet" href="../Source/CSS/styles.css">
-    <script src="../Source/js/navbar.js" type="module" async></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyoisLKM7m6SGT4tpYIB5hTvCWuGBconU&callback=initMap"></script>
-    <script src="../Source/js/placeGeotag.js" type="module" defer async></script>
+    <script src="../Source/js/navbar.js" type="module"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyoisLKM7m6SGT4tpYIB5hTvCWuGBconU&callback=initMap"></script>
+    <script src="../Source/js/placeGeotag.js" type="module" async></script>
+    <script src="../Source/js/switcher.js" type="module" async></script>
 </head>
 
 <body>
@@ -19,76 +20,81 @@
     </header>
     <div class="container">
         <h2 class="page-name">Media</h2>
-        <div id="map"></div>
-        <div class="Gallery grid">
+        <div class="selector">
+            <button id="selector1" class="selected">GRID</button>
+            <button id="selector2">MAP</button>
+        </div>
+        <div id = "selector2-content" class = "grid hide"> <div id="map"></div></div>
+       
+        <div id = "selector1-content" class="Gallery grid">
             <div class="image-holder">
                 <a href="/WSOA3028A_1839434/Source/Images/0_subMOn4fzQwQmwNW.jpg">
                     <img src="/WSOA3028A_1839434/Source/Images/0_subMOn4fzQwQmwNW.jpg" data-latitude="-26.199593"
-                        data-longitude="28.062860" alt="3 men skating" width="100%">
+                        data-longitude="28.062860" data-caption = "Photograph by Coral Amy Brown[1]" alt="3 men skating" width="100%">
                     <p class="caption">Photograph by Coral Amy Brown[1]</p>
                 </a>
             </div>
 
             <div class="image-holder">
                 <a href="../Source/Images/jacques-nel-f0RvpwF-iXE-unsplash.jpg">
-                    <img src="../Source/Images/jacques-nel-f0RvpwF-iXE-unsplash.jpg" data-latitude="" data-longitude=""
-                        alt="Johannesburg" width="100%">
+                    <img src="../Source/Images/jacques-nel-f0RvpwF-iXE-unsplash.jpg" data-latitude="-26.204629" data-longitude="28.038181"
+                    data-caption ="Photo by Jacques Nel on Unsplash" alt="Johannesburg" width="100%">
                     <p class="caption">Photo by Jacques Nel on Unsplash</p>
                 </a>
             </div>
 
             <div class="image-holder">
                 <a href="../Source/Images/1209187.jpg">
-                    <img src="../Source/Images/1209187.jpg" data-latitude="" data-longitude=""
-                        alt="Neon johannesburg buildings" width="100%">
+                    <img src="../Source/Images/1209187.jpg" data-latitude="26.200831" data-longitude="28.049354"
+                    data-caption ="Photograph by Elsa Bleda[2]" alt="Neon johannesburg buildings" width="100%">
                     <p class="caption">Photograph by Elsa Bleda[2]</p>
                 </a>
             </div>
 
             <div class="image-holder">
                 <a href="../Source/Images/shawn-henry-eK_aInAXydw-unsplash.jpg">
-                    <img src="../Source/Images/shawn-henry-eK_aInAXydw-unsplash.jpg" data-latitude="" data-longitude=""
-                        alt="Man skating" width="100%">
+                    <img src="../Source/Images/shawn-henry-eK_aInAXydw-unsplash.jpg" data-latitude="-26.193536" data-longitude="28.037007"
+                    data-caption ="Photo by shawn henry on Unsplash" alt="Man skating" width="100%">
                     <p class="caption"> Photo by shawn henry on Unsplash</p>
                 </a>
             </div>
 
             <div class="image-holder">
                 <a href="../Source/Images/DSC01850.jpeg">
-                    <img src="../Source/Images/DSC01850.jpeg" data-latitude="" data-longitude=""
-                        alt="Skater skating off wall" width="100%">
+                    <img src="../Source/Images/DSC01850.jpeg" data-latitude="-26.190528" data-longitude="28.048374"
+                    data-caption ="Photograph by Jonathan Kyriakou[3]" alt="Skater skating off wall" width="100%">
                     <p class="caption">Photograph by Jonathan Kyriakou[3]</p>
                 </a>
             </div>
 
             <div class="image-holder">
                 <a href="../Source/Images/tembinkosi-sikupela-ejwfqAeRqqA-unsplash.jpg">
-                    <img src="../Source/Images/tembinkosi-sikupela-ejwfqAeRqqA-unsplash.jpg" data-latitude=""
-                        data-longitude="" alt="Johannesburg" width="100%">
+                    <img src="../Source/Images/tembinkosi-sikupela-ejwfqAeRqqA-unsplash.jpg" data-latitude="-26.195684"
+                        data-longitude="28.050219" data-caption ="Photo by Tembinkosi Sikupela" alt="Johannesburg" width="100%">
                     <p class="caption">Photo by Tembinkosi Sikupela</p>
                 </a>
             </div>
 
             <div class="image-holder">
                 <a href="../Source/Images/hector-bermudez-U7x1TsaQqcY-unsplash.jpg">
-                    <img src="../Source/Images/hector-bermudez-U7x1TsaQqcY-unsplash.jpg" data-latitude=""
-                        data-longitude="" alt="Man skating" width="100%">
+                    <img src="../Source/Images/hector-bermudez-U7x1TsaQqcY-unsplash.jpg" data-latitude="-26.184854"
+                        data-longitude="28.048843" data-caption ="Photo by Hector Bermudez on Unsplash" alt="Man skating" width="100%">
                     <p class="caption">Photo by Hector Bermudez on Unsplash</p>
                 </a>
             </div>
 
             <div class="image-holder">
                 <a href="../Source/Images/img_9543-austin-malema-jhb.jpg">
-                    <img src="../Source/Images/img_9543-austin-malema-jhb.jpg" data-latitude="" data-longitude=""
-                        alt="Busy johannesburg street" width="100%">
+                    <img src="../Source/Images/img_9543-austin-malema-jhb.jpg" data-latitude="-26.204505" data-longitude="28.040774"
+                    data-caption ="Photograph by Austin Malema[4]" alt="Busy johannesburg street" width="100%">
                     <p class="caption">Photograph by Austin Malema[4]</p>
                 </a>
             </div>
 
             <div class="image-holder">
                 <a href="../Source/Images/oscar-soderlund-xq6tKtQYNJI-unsplash.jpg">
-                    <img src="../Source/Images/oscar-soderlund-xq6tKtQYNJI-unsplash.jpg" data-latitude=""
-                        data-longitude="" alt="Skateboard" width="100%">
+                    <img src="../Source/Images/oscar-soderlund-xq6tKtQYNJI-unsplash.jpg" data-latitude="-26.206809"
+                        data-longitude="28.040774" data-caption ="Photo by Oscar Söderlund on Unsplash" alt="Skateboard" width="100%">
                     <p class="caption">Photo by Oscar Söderlund on Unsplash</p>
                 </a>
             </div>
@@ -96,16 +102,16 @@
 
             <div class="image-holder">
                 <a href="../Source/Images/Karabo-Mooki-935x621.jpeg">
-                    <img src="../Source/Images/Karabo-Mooki-800x531.jpeg" data-latitude="" data-longitude=""
-                        alt="Skater in mid air" width="100%">
+                    <img src="../Source/Images/Karabo-Mooki-800x531.jpeg" data-latitude="-26.200920" data-longitude="28.041597"
+                    data-caption ="Photograph by Karabo Mooki[5]" alt="Skater in mid air" width="100%">
                     <p class="caption">Photograph by Karabo Mooki[5]</p>
                 </a>
             </div>
 
             <div class="image-holder">
                 <a href="../Source/Images/tania-melnyczuk-UwUqq-vm-Oo-unsplash.jpg">
-                    <img src="../Source/Images/tania-melnyczuk-UwUqq-vm-Oo-unsplash.jpg" data-latitude=""
-                        data-longitude="" alt="Johannesburg" width="100%">
+                    <img src="../Source/Images/tania-melnyczuk-UwUqq-vm-Oo-unsplash.jpg" data-latitude="-26.204601"
+                        data-longitude="28.060913" data-caption ="Photo by Tania Melnyczuk" alt="Johannesburg" width="100%">
                     <p class="caption">Photo by Tania Melnyczuk</p>
                 </a>
             </div>

@@ -40,10 +40,6 @@ color: rgb(105, 105, 105);
   transition: 0.4s;
 }
 
-#map{
-  height: 70vh;
-  width: 100%;
-}
 
 .home-pic{
   width: 50%;
@@ -83,7 +79,7 @@ color: rgb(105, 105, 105);
   grid-auto-rows: minmax(20vh,auto);
 }
 
-.blog-selector{
+.selector{
   margin: auto;
   width: 40%;
   display: flex;
@@ -94,7 +90,7 @@ color: rgb(105, 105, 105);
 .hide{
   display: none;
 }
-.blog-selector button{
+.selector button{
   color: rgb(190, 190, 190);
   background: none;
   border-style: solid;
@@ -106,13 +102,20 @@ color: rgb(105, 105, 105);
   margin-left: 5%;
 }
 
-.blog-selector .selected{
+.selector .selected{
   background: rgb(190, 190, 190);
   border-style: solid;
   border-color: rgb(74, 160, 134);
   color: rgb(0, 0, 0);
 }
 
+#map{
+  height: 70vh;
+  width: 100%;
+
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
 /*Buttons*/
 button{
   
