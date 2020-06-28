@@ -47,5 +47,9 @@ function MapImages(myMap) {
 }
 
 
-
-document.addEventListener('DOMContentLoaded', initMap());
+document.addEventListener('DOMContentLoaded', function () {
+    var source = document.createElement('script');
+    source.type = 'text/javascript';
+    source.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAyoisLKM7m6SGT4tpYIB5hTvCWuGBconU&callback=initMap";
+    document.getElementsByTagName('head')[0].appendChild(source);
+})
