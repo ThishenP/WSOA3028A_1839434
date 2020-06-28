@@ -1,0 +1,73 @@
+<head>
+    <title>External Dependancy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avery Sosa Blog API Google Maps JavaScript">
+    <meta name="keywords" content="Skating, Photography">
+    <meta name="author" content="Thishen Packirisamy 1839434">
+    <script src="/WSOA3028A_1839434/Source/js/navbar.js" type="module" async></script>
+    <link rel="stylesheet" href="/WSOA3028A_1839434/Source/CSS/styles.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <article class="h-entry container">
+        <header>
+            <h2 class="p-name">External Dependancy</h2>
+        </header>
+        <section class="e-content">
+            <p>
+                The google maps JavaScript API is being used as an external dependency for the site. The API is being
+                leveraged to display a map of Johannesburg with all of the content photos overlayed at the position they
+                were taken. The map can be found in the media section where users can switch between map view and
+                gallery view. Avery Sosa’s movement around Johannesburg is a very important part of his character and
+                the map therefore gives him a way to share the places that he has discovered around his city. It is
+                therefore necessary to have this dependency as it accurately gives users insight into Avery’s world and
+                combines it with the wealth of information about these places that is stored on google. This also helps
+                to bring light to the lesser known parts of the city.
+            </p>
+            <p>
+                Other options for this dependency could have been used such as MapBox or Bing Maps but the free google
+                maps API offered much more. Of all the options Google Maps has the biggest library by far and this would
+                therefore allow for better recognition and accuracy of the lesser known areas that Avery may frequent.
+                Maps also gives visitors access to the street view of each photo's position. In a development sense
+                Google Maps had clear documentation on how to leverage the API.
+            </p>
+            <p>
+
+                On a more technical note each photo on the HTML page includes data attributes for latitude and
+                longitude. This is used in a general JavaScript function to create an element on the map for each image
+                on the page in its corresponding position. Ideally the function would use the exif.js framework to pull
+                the EXIF data from an image. EXIF data contains geotags which could have been used to place the photo
+                instead of pulling positions from data attributes in HTML. This functionality could not be implemented
+                at this stage as only one external dependency was allowed for the project. It could however, easily be
+                used for any other projects using similar functionality. Geotag data was not available for the photos so
+                I chose photo positions around Johannesburg CBD that represent where the character would go. The
+                JavaScript Google Maps API has functionality that will call a specific callback function after
+                completion. The function that it calls is named initMap(). Once the page content is loaded the map is
+                created and the system searches the page to find all images on the page. The location data is extracted
+                from these images and each image is added to the map. During implementation it was found that a user
+                with slower internet could switch to the map section before the photos had loaded. This led to the code
+                not picking up on all photos and displaying only a few photos. This was rectified by entering
+                functionality that only allowed for users to switch to the map after it had been populated. Google
+                provided an API key which would be used to allow for access to the map. Since all code is being pushed
+                to GitHub the key is public for anyone to see and to secure against unauthorised use I restricted the
+                key to only run on my GitHub Pages domain.
+            </p>
+
+
+        </section>
+       
+        <footer>
+
+            <p>Written by <a class="p-author h-card" href="https://github.com/ThishenP">Thishen Packirisamy</a>
+            <p class="dt-published">Posted: 28/06/2020</p>
+
+        </footer>
+    </article>
+</body>
+
+</html>
