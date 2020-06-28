@@ -10,14 +10,13 @@ function MapImages(myMap) {
 
     const images = document.querySelectorAll("img");
     for (const image of images.entries()) {
-        console.log('image: ', image[1].alt)
-        console.log('pos: ', image[1].dataset.latitude, image[1].dataset.longitude)
+      
         new google.maps.Size(42, 68);
         let icon = new google.maps.MarkerImage(
             image[1].src,
-            null, /* size is determined at runtime */
-            null, /* origin is 0,0 */
-            null, /* anchor is bottom center of the scaled image */
+            null, 
+            null, 
+            null, 
             new google.maps.Size(image[1].clientWidth / 5, image[1].clientHeight / 5)
         );
         let marker = new google.maps.Marker({
@@ -48,7 +47,7 @@ function MapImages(myMap) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    var source = document.createElement('script');
+    let source = document.createElement('script');
     source.type = 'text/javascript';
     source.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAyoisLKM7m6SGT4tpYIB5hTvCWuGBconU&callback=initMap";
     document.getElementsByTagName('head')[0].appendChild(source);
