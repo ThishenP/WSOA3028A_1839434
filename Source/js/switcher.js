@@ -1,8 +1,4 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//   alert("asdfasdf")
-// })
 
-document.addEventListener('DOMContentLoaded', function () {
   
   let selector2 = document.getElementById("selector2")
   let selector1 = document.getElementById("selector1")
@@ -33,4 +29,4 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById("selector2-content").className += " hide";
     }
   })
-})
+

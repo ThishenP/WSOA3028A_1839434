@@ -38,11 +38,17 @@ function MapImages(myMap) {
         marker.addListener('click', function () {
             InfoWindow.open(map, marker);
         });
-
+        
 
 
     }
-
+    loadSwitcher()
+}
+function loadSwitcher(){
+    let source = document.createElement('script');
+    source.type = 'module';
+    source.src = "../Source/js/switcher.js";
+    document.getElementsByTagName('head')[0].appendChild(source);
 }
 
 
